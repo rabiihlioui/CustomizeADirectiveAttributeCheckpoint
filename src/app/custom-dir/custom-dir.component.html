@@ -1,0 +1,17 @@
+<h1 appChosenColor
+  [colorIn] = "'red'"
+  [colorOut] = "'yellow'"
+>
+  Chosen Color Works!
+</h1>
+
+<div class="form-group">
+  <label for="txt">Enter your text</label>
+  <input type="text" class="form-control" id="txt" placeholder="Enter text" [(ngModel)]="coloredText"> 
+</div>
+
+<div class="form-group">
+  <p appRandColor>
+    {{coloredText}}
+  </p>
+</div>
